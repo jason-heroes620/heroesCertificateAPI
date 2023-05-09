@@ -34,5 +34,6 @@ Route::group(['middleware' => 'XSS'], function () {
     //     Route::resource('partners', PartnersController::class);
     // });
 
-
+    #### test functions #####
+    // Route::get('getPartnerImage/{id}', [CertificateController::class, 'getPartnerImage']);
 });
