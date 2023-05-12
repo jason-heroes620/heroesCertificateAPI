@@ -1,0 +1,67 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-5f05f91a.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/fonts/GreatVibes-Regular.ttf": {
+    "file": "assets/GreatVibes-Regular-39371d05.ttf",
+    "src": "resources/fonts/GreatVibes-Regular.ttf"
+  },
+  "resources/fonts/Montserrat-Bold.ttf": {
+    "file": "assets/Montserrat-Bold-189aeb28.ttf",
+    "src": "resources/fonts/Montserrat-Bold.ttf"
+  },
+  "resources/fonts/Montserrat-Italic.ttf": {
+    "file": "assets/Montserrat-Italic-a9bc9431.ttf",
+    "src": "resources/fonts/Montserrat-Italic.ttf"
+  },
+  "resources/fonts/Montserrat-Regular.ttf": {
+    "file": "assets/Montserrat-Regular-dcfe8df2.ttf",
+    "src": "resources/fonts/Montserrat-Regular.ttf"
+  },
+  "resources/images/Activkix.png": {
+    "file": "assets/Activkix-8ebc45c1.png",
+    "src": "resources/images/Activkix.png"
+  },
+  "resources/images/Hua Ying.png": {
+    "file": "assets/Hua Ying-93593b45.png",
+    "src": "resources/images/Hua Ying.png"
+  },
+  "resources/images/Lees Cocoa Farm.png": {
+    "file": "assets/Lees Cocoa Farm-2c7def3f.png",
+    "src": "resources/images/Lees Cocoa Farm.png"
+  },
+  "resources/images/Terrarium World.png": {
+    "file": "assets/Terrarium World-9e2423f9.png",
+    "src": "resources/images/Terrarium World.png"
+  },
+  "resources/images/certificate-bg.png": {
+    "file": "assets/certificate-bg-c3f7cd5d.png",
+    "src": "resources/images/certificate-bg.png"
+  },
+  "resources/images/certificate_template.jpg": {
+    "file": "assets/certificate_template-8307bf49.jpg",
+    "src": "resources/images/certificate_template.jpg"
+  },
+  "resources/images/certificate_template_2.jpg": {
+    "file": "assets/certificate_template_2-afc46033.jpg",
+    "src": "resources/images/certificate_template_2.jpg"
+  },
+  "resources/images/discount_voucher.png": {
+    "file": "assets/discount_voucher-64352b3d.png",
+    "src": "resources/images/discount_voucher.png"
+  },
+  "resources/images/heroes_logo.png": {
+    "file": "assets/heroes_logo-3eebe8ba.png",
+    "src": "resources/images/heroes_logo.png"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-5f05f91a.css"
+    ],
+    "file": "assets/app-edbe18b2.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

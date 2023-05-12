@@ -31,16 +31,18 @@ class AuthController extends Controller
         $session = $headers[$key];
         $response = Http::withHeaders([
             'X-Oc-Merchant-Id' => $this->merchantId,
-            'X-Oc-Session' => $session
-        ])->post($this->rest . 'login', [
+            'X-Oc-Session' => $session,
+        ])->post($this->rest . "login", [
             'email' => $request->email,
             'password' => $request->password
         ]);
+        //print_r($response);
         if ($response->ok()) {
             $authUser = User::select('firstname', 'lastname', 'email')
                 ->from('customer')
                 ->where('email', $request->email)
                 ->first();
+            //print_r($authUser);
             $success['token'] =  $authUser->createToken('HeroesCertificate')->plainTextToken;
             $success['firstname'] =  $authUser->firstname;
             $success['lastname'] =  $authUser->lastname;
@@ -51,7 +53,7 @@ class AuthController extends Controller
 
             return $this->sendResponse($success, 'User signed in');
         } else {
-            return $this->sendError('Unauthorised.', ['error' => 'Unauthorised']);
+            return $this->sendError('Unauthorised.', ['error' => 'Unauthorised'], $response->status());
         }
     }
 
@@ -63,7 +65,7 @@ class AuthController extends Controller
         $response = Http::withHeaders([
             'X-Oc-Restadmin-Id' => $this->adminId,
             'X-Oc-Session' => $session
-        ])->post($this->restAdmin . 'login', [
+        ])->post($this->restAdmin . "login", [
             'username' => $request->username,
             'password' => $request->password
         ]);
